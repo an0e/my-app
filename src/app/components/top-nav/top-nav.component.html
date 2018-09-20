@@ -1,0 +1,14 @@
+<mat-toolbar class="topnav" [class.mat-elevation-z6]="!isActive" [class.mat-elevation-z8]="isActive">
+    My App
+    <span class="horizontal-spacer"></span>
+    <div class="topnav-item">
+        <a mat-icon-button routerLink=".">
+            <fa-icon [icon]="['fas', 'info']"></fa-icon>
+        </a>
+    </div>
+    <div class="topnav-item">
+        <a mat-icon-button routerLink=".">
+            <fa-icon [icon]="['fas', 'user']"></fa-icon>
+        </a>
+    </div>
+</mat-toolbar>

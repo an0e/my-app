@@ -1,0 +1,15 @@
+.page-container {
+    background-color: #4a4a4a;
+    min-height: calc(100% - 230px);
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.page {
+    background-color: white;
+    max-width: 940px;
+    min-height: 900px;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+}
