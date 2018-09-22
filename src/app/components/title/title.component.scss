@@ -1,0 +1,22 @@
+.title-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.title-text {
+    font-size: 30px;
+    margin-top: 10px;
+    display: block;
+}
+
+// TODO: move this to global styles
+.btn-prime {
+    background: #ef3d3d;
+}
+
+.btn-secondary {
+    background: #dedede;
+    color: #4a4a4a;
+}

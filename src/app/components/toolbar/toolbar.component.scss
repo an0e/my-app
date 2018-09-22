@@ -1,6 +1,9 @@
+@import "../../../styles.scss";
+
 .toolbar {
     height: 100px;
-    background-color: #0B5F73;
     z-index: 3;
     position: relative;
+    background-color: mat-color($my-theme-primary, 900);
+    color: mat-color($my-theme-primary, '900-contrast');
 }

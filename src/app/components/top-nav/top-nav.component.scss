@@ -1,8 +1,10 @@
+@import "../../../styles.scss";
+
 .topnav {
     height: 55px;
     position: relative;
-    color: white;
-    background-color: #2589A0;
+    background-color: mat-color($my-theme-primary);
+    color: mat-color($my-theme-primary, '500-contrast');
     z-index: 4;
 }
 

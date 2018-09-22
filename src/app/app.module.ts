@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
@@ -18,6 +19,7 @@ import { MaterialModulesModule } from './components/material-modules/material-mo
 import { TopNavComponent } from './components/top-nav/top-nav.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { PageComponent } from './components/page/page.component';
+import { TitleComponent } from './components/title/title.component';
 
 // Add an icon to the library for convenient access in other components
 library.add(fas, far);
@@ -27,13 +29,15 @@ library.add(fas, far);
     AppComponent,
     TopNavComponent,
     ToolbarComponent,
-    PageComponent
+    PageComponent,
+    TitleComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
-    MaterialModulesModule
+    MaterialModulesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

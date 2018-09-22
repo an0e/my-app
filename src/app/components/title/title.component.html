@@ -1,0 +1,19 @@
+<div class="title-container">
+  <div class="piece-title">
+
+
+    <div *ngIf="!inEditMode">
+      <span class="title-text" (click)="editMode()">{{pieceTitle}}</span>
+    </div>
+
+    <div *ngIf="inEditMode" class="title-edit-mode">
+      <mat-form-field>
+        <input matInput placeholder="Title" #box (keyup.enter)="onEnter(box.value)" value={{pieceTitle}}>
+      </mat-form-field>
+      <button mat-mini-fab color="accent" class="btn-prime" (click)="onEnter(box.value)" style="margin-left: 15px;">
+        <fa-icon [icon]="['fas', 'check']"></fa-icon>
+      </button>
+    </div>
+
+  </div>
+</div>

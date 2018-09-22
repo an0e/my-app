@@ -1,0 +1,76 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$my-teal: (
+    50 : #e5f1f4,
+    100 : #bedce3,
+    200 : #92c4d0,
+    300 : #66acbd,
+    400 : #469bae,
+    500 : #2589a0,
+    600 : #218198,
+    700 : #1b768e,
+    800 : #166c84,
+    900 : #0d5973,
+    A100 : #a6e6ff,
+    A200 : #73d7ff,
+    A400 : #40c9ff,
+    A700 : #26c1ff,
+    contrast: (
+        50: $dark-primary-text,
+        100: $dark-primary-text,
+        200: $dark-primary-text,
+        300: $dark-primary-text,
+        400: $dark-primary-text,
+        500: $light-primary-text,
+        600: $light-primary-text,
+        700: $light-primary-text,
+        800: $light-primary-text,
+        900: $light-primary-text,
+        A100: $dark-primary-text,
+        A200: $dark-primary-text,
+        A400: $dark-primary-text,
+        A700: $dark-primary-text,
+    )
+);
+
+$my-red: (
+    50 : #fde8e8,
+    100 : #fac5c5,
+    200 : #f79e9e,
+    300 : #f47777,
+    400 : #f15a5a,
+    500 : #ef3d3d,
+    600 : #ed3737,
+    700 : #eb2f2f,
+    800 : #e82727,
+    900 : #e41a1a,
+    A100 : #ffffff,
+    A200 : #ffe4e4,
+    A400 : #ffb1b1,
+    A700 : #ff9797,
+    contrast: (
+        50: $dark-primary-text,
+        100: $dark-primary-text,
+        200: $dark-primary-text,
+        300: $dark-primary-text,
+        400: $dark-primary-text,
+        500: $light-primary-text,
+        600: $light-primary-text,
+        700: $light-primary-text,
+        800: $light-primary-text,
+        900: $light-primary-text,
+        A100: $dark-primary-text,
+        A200: $dark-primary-text,
+        A400: $dark-primary-text,
+        A700: $dark-primary-text,
+    )
+);
+
+$my-theme-primary: mat-palette($my-teal);
+$my-theme-accent:  mat-palette($my-red);
+
+$my-theme: mat-light-theme($my-theme-primary, $my-theme-accent);
+
+@include angular-material-theme($my-theme);

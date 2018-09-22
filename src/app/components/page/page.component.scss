@@ -8,8 +8,11 @@
 .page {
     background-color: white;
     max-width: 940px;
-    min-height: 900px;
+    min-height: 800px;
     margin: auto;
     padding: 50px;
+}
+
+.bar-container {
     display: flex;
 }
