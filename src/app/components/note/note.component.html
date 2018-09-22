@@ -1,0 +1,9 @@
+<h2>My list of Notes</h2>
+<cdk-drop (dropped)="drop($event)">
+  <div *ngFor="let note of notes" cdkDrag>
+    <fa-icon [icon]="[note.id, note.name]" ></fa-icon>
+  </div>
+</cdk-drop>
+
+
+

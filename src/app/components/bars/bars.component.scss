@@ -1,0 +1,23 @@
+.bar-container-inner {
+    display: flex;
+    flex-wrap: wrap;
+    background: #e3e3e3;
+}
+
+.bar {
+    min-width: 33.33%;
+    flex: 1 1 0;
+}
+
+// stops the last bar from growing
+// .bar:last-child { visibility: collapse;}
+
+//lines and spaces
+.note-line {
+    background-color: black;
+    height: 2px;
+}
+
+.note-space {
+    height: 8px;
+}
